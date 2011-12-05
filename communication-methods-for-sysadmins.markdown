@@ -1,34 +1,26 @@
 Communicate ALL the things in ALL the places
 --------------------------
 
-Sysadmins like communication:
-- We like knowing what is going on and we really like knowing before it wakes 
-  us up at 3am. 
-- We like to have a clear and predicatable location for documentation and we 
-  like the status of things to be painfully obvious. 
-- We like it better if we have to walk right past the documentation when we
-  are diagnosing the problem.
-- We like search. 
+"Where is that documented?" or "Was there an email about that?" are pretty
+common things to hear around most technical organizations. I cannot count the
+number of long-winded email messages I've sent out describing every detail of
+an upcoming change, only to have someone ask me "What are you doing?" when I
+execute the change. 
 
-Unfortunately, so rare is it to find all of these things to be true.
+Whether we like it or not, we are all about "me". When someone else sends an
+email about something, our interest in that thing is inversely proportional to
+the length of the email. When stuff breaks at 3am and we *know* there was an
+email sent out about that - we go looking and can't find it - so we call the
+person who sent it. They are now ecstatic they invested 1/2 a day crafting
+that email. 
 
-*What is good communication?*
-
-Communication should be like good road signage. It should tell me 
-what I need to know far enough in advance that I can prepare for it
-and remind me about it often, and before it's too late. It should
-be detailed enough to get the point across, but brief enough that
-I can read it in a hurry. I should not have to use define: in google
-to interpret it. 
-
-Most importantly, I shouldn't have to spend a lot of time finding it. It
-should be there staring at me when I go to look at the problem. 
+This post is about communication & documentation for day to day stuff. This is
+not the documentation you dig through when you have all day to sort out a
+problem. This is the stuff you want now. 
 
 Pop the hood on any car and you'll see an example of this - documentation,
 right there, all the stuff you are most likely to care about when you are
-looking under the hood (pitty they don't make use of more of that real estate
-really). 
+looking under the hood. It doesn't matter if you've ever driven this car or
+not - the documentation is placed as close to the problem as it can get. 
 
-I have a 
 
-# 
