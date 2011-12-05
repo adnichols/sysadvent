@@ -22,14 +22,14 @@ right there, all the stuff you are most likely to care about when you are
 looking under the hood. It doesn't matter if you've ever driven this car or
 not - the documentation is placed as close to the problem as it can get. 
 
-# Communication in your Config Management System
+### Communication in your Config Management System
 
 Today, most of your configuration related changes should be distributed
 through some sort of CM system. This is a great place to document the
 status of things as they are changing. Here are some examples using
 puppet as the CM.
 
-*Identify files that are managed by the CM system*
+**Identify files that are managed by the CM system**
 At the top of every file managed by your config management system you
 should have a line that looks something like this:
 
@@ -40,8 +40,8 @@ should have a line that looks something like this:
 This makes it perfectly clear where to find this file if you want to
 edit it. 
 
-*Tell users about things they should know when they are running the CM
-manually or debugging it*
+**Tell users about things they should know when they are running the CM
+manually or debugging it**
 If there's important information you want people to know about when they
 run your CM in debug mode (presumably looking for problems) you can
 usually add notifications. Comments in the code are great if someone is
@@ -57,8 +57,8 @@ hand:
 
     notice: WARNING: This module (java) is experimental and may break things!
 
-*Send short email messages when things are changing, with links to more
-details*
+**Send short email messages when things are changing, with links to more
+details**
 If you are making major changes to your CM and you need people to be
 aware, send a short email out with a link to details. Make sure you
 include enough keywords to make it searchable later on, but short enough
@@ -101,11 +101,11 @@ If I want a script to stop running, and this includes init scripts or
 others, I will typically disable the script with an exit along with a
 message to let the user know:
 
-    #!/bin/bash
-    # SCRIPT DISABLED - anichols 11/11/11
-    # See http://wiki/why-I-disabled-httpd-on-this-host for more info
-    echo "This script is disabled, see http://wiki/why-I-disabled-httpd-on-this-host for more detail"
-    exit
+    start() {
+            # SCRIPT DISABLED - anichols 11/11/11
+            # See http://wiki/why-I-disabled-httpd-on-this-host for more info
+            echo "This script is disabled, see http://wiki/why-I-disabled-httpd-on-this-host for more detail"
+            exit
 
 So when someone tries to use it they see this:
 
