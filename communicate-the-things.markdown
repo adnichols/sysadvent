@@ -1,17 +1,10 @@
 Communicate ALL the things in ALL the places
 --------------------------
-"Where is that documented?" or "Was there an email about that?" are pretty
-common things to hear around most technical organizations. I cannot count the
-number of long-winded email messages I've sent out describing every detail of
-an upcoming change, only to have someone ask me "What are you doing?" when I
-execute the change.
-
-Whether we like it or not, we are all about "me". When someone else sends an
+Whether we like it or not, we Sysadmins are all about "me". When someone else sends an
 email about something, our interest in that thing is inversely proportional to
 the length of the email. When stuff breaks at 3am and we **know** there was an
 email sent out about that - we go looking and can't find it - so we call the
-person who sent it. They are now ecstatic they invested 1/2 a day crafting
-that email.
+person who sent it. There is a better way. 
 
 This post is about communication & documentation for day to day stuff. This is
 not the documentation you dig through when you have all day to sort out a
@@ -22,6 +15,8 @@ right there, all the stuff you are most likely to care about when you are
 looking under the hood. It doesn't matter if you've ever driven this car or
 not - the documentation is placed as close to the problem as it can get. 
 
+Here are some examples. 
+
 ### Communication in your Config Management System
 
 Today, most of your configuration related changes should be distributed
@@ -29,7 +24,7 @@ through some sort of CM system. This is a great place to document the
 status of things as they are changing. Here are some examples using
 puppet as the CM.
 
-**Identify files that are managed by the CM system**
+#### Identify files that are managed by the CM system
 At the top of every file managed by your config management system you
 should have a line that looks something like this:
 
@@ -40,8 +35,10 @@ should have a line that looks something like this:
 This makes it perfectly clear where to find this file if you want to
 edit it. 
 
-**Tell users about things they should know when they are running the CM
-manually or debugging it**
+If you are moving things from one CM to another, tag the old ones too so
+people can tell which system is the source for a particular file. 
+
+#### Tell users about things they should know when they are running the CM manually or debugging it
 If there's important information you want people to know about when they
 run your CM in debug mode (presumably looking for problems) you can
 usually add notifications. Comments in the code are great if someone is
@@ -57,8 +54,7 @@ hand:
 
     notice: WARNING: This module (java) is experimental and may break things!
 
-**Send short email messages when things are changing, with links to more
-details**
+#### Send short email messages when things are changing, with links to more details
 If you are making major changes to your CM and you need people to be
 aware, send a short email out with a link to details. Make sure you
 include enough keywords to make it searchable later on, but short enough
@@ -115,5 +111,23 @@ So when someone tries to use it they see this:
 You can do fancy stuff like conditionals so certain users can run the
 script even, but the point is - communicate what's going on where the
 user will come in contact with the change.
+
+### If you have migrated to using a new tool, put a header on the old one
+
+As an example, you are moving some graphing from cacti to Graphite & you
+want users to know about it. You want to keep the old cacti instance up
+because it has valuable historical data you haven't moved yet, but you
+want folks to stop asking you why the cacti graphs aren't accurate. 
+
+At the top of cacti, in the header, put something like this:
+
+<font color=red>
+<strong>This cacti data is no longer updated</strong><br>
+This data is here for archival purposes, for current data visit
+http://awesome-graphite-url
+</font>
+
+It's simple & people will see it. If they don't - you can safely ignore
+their pleas of ignorance. 
 
 
