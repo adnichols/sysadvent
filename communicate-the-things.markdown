@@ -1,4 +1,4 @@
-Communicate ALL the things in ALL the places
+Communicate change where folks will come in contact with it
 --------------------------
 Whether we like it or not, we Sysadmins are all about "me". When someone
 else sends an email about something, our interest in that thing is
