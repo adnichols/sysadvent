@@ -1,28 +1,31 @@
 Communicate ALL the things in ALL the places
 --------------------------
-Whether we like it or not, we Sysadmins are all about "me". When someone else sends an
-email about something, our interest in that thing is inversely proportional to
-the length of the email. When stuff breaks at 3am and we **know** there was an
-email sent out about that - we go looking and can't find it - so we call the
-person who sent it. There is a better way. 
+Whether we like it or not, we Sysadmins are all about "me". When someone
+else sends an email about something, our interest in that thing is
+inversely proportional to the length of the email. When stuff breaks at
+3am and we **know** there was an email sent out about that - we go
+looking and can't find it - so we call the person who sent it. There is
+a better way. 
 
-This post is about communication & documentation for day to day stuff. This is
-not the documentation you dig through when you have all day to sort out a
-problem. This is the stuff you want now.
+This post is about communication & documentation for day to day stuff.
+This is not the documentation you dig through when you have all day to
+sort out a problem. This is the stuff you want now.
 
 Pop the hood on any car and you'll see an example of this documentation,
-right there, all the stuff you are most likely to care about when you are
-looking under the hood. It doesn't matter if you've ever driven this car or
-not - the documentation is placed as close to the problem as it can get. 
+right there, all the stuff you are most likely to care about when you
+are looking under the hood. It doesn't matter if you've ever driven this
+car or not - the documentation is placed as close to the problem as it
+can get. 
 
 Here are some examples. 
 
 ### Communication in your Config Management System
 
 Today, most of your configuration related changes should be distributed
-through some sort of CM system. This is a great place to document the
-status of things as they are changing. Here are some examples using
-puppet as the CM.
+through some sort of CM system. Since this is where most folks will go
+looking for the status of things when they break, this is a great place
+to document the status of things as they are changing. Here are some
+examples using puppet as the CM.
 
 #### Identify files that are managed by the CM system
 At the top of every file managed by your config management system you
@@ -129,5 +132,13 @@ http://awesome-graphite-url
 
 It's simple & people will see it. If they don't - you can safely ignore
 their pleas of ignorance. 
+
+### You get the point, the point is...
+
+When you are working on systems and making changes, think about the
+other people who will come in contact with your change and how you can
+make it painfully obvious to them what is going on. Think about your own
+thoughtless patterns when you are bleary eyed at 3am, what would make it
+easy for you to know what is going on. 
 
 
