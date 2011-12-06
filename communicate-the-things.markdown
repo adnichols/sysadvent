@@ -31,9 +31,9 @@ examples using puppet as the CM.
 At the top of every file managed by your config management system you
 should have a line that looks something like this:
 
-  # This file is managed by puppet - any changes made to this file
-  # directly will be deleted
-  # Source: puppet/modules/wibble/templates/wibble_a.erb
+    # This file is managed by puppet - any changes made to this file
+    # directly will be deleted
+    # Source: puppet/modules/wibble/templates/wibble_a.erb
 
 This makes it perfectly clear where to find this file if you want to
 edit it. 
