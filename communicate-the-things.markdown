@@ -124,11 +124,11 @@ want folks to stop asking you why the cacti graphs aren't accurate.
 
 At the top of cacti, in the header, put something like this:
 
-<font color=red>
-<strong>This cacti data is no longer updated</strong><br>
-This data is here for archival purposes, for current data visit
-http://awesome-graphite-url
-</font>
+    <font color=red>
+    <strong>This cacti data is no longer updated</strong><br>
+    This data is here for archival purposes, for current data visit
+    http://awesome-graphite-url
+    </font>
 
 It's simple & people will see it. If they don't - you can safely ignore
 their pleas of ignorance. 
