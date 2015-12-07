@@ -124,6 +124,10 @@ In [Jesse Robbins' 2012 Velocity talk](https://www.youtube.com/watch?v=OU8ihx3nT
 
 This journey is different for everyone and, for me at least, it's all about the story. So go forth and make more awesome stories!
 
+## Special Thanks
+
+A super special thanks to Michelle Carroll for all her input on this post - awesome team effort. I'm super thankful for all the help. Also - to everyone who read this - Thank You! 
+
 ## References and Recommended Reading / Viewing
 
 * [Exploiting Conway's Law for Underpants and Profit](https://vimeo.com/65552395) - [Jeff Hackert](https://twitter.com/jchackert) talks about creating change without being a jerk. Watching this multiple times might be required, but there are so many important messages in here about making change in an organization. It's also fun. 
