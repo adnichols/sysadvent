@@ -26,11 +26,11 @@ A siloed organization with a top-down communication structure may struggle to ad
 
 ## Beginning change: The seed of an idea
 
-> "The impediment to action advances action. What stands in the way becomes the way." - Marcus Aurelius
+__"The impediment to action advances action. What stands in the way becomes the way."__ - Marcus Aurelius
 
-The problem for our team was that we needed to build a new service, and the tools available to deploy that service weren’t great. I recall the day we had standup, and our lead announced we were building this new service. Someone asked, “Can we try using continuous deployment?” We had a cross functional team (Dev, Ops, Build & Release, Testers), and after some discussion everyone was willing to give it a try. So we did. 
+> The problem for our team was that we needed to build a new service, and the tools available to deploy that service weren’t great. I recall the day we had standup, and our lead announced we were building this new service. Someone asked, “Can we try using continuous deployment?” We had a cross functional team (Dev, Ops, Build & Release, Testers), and after some discussion everyone was willing to give it a try. So we did. 
 
-After the initial success of continuous deployment we wanted to expand the idea to other teams. We had to start over here again, taking the lessons we learned and applying them to new teams.
+> After the initial success of continuous deployment we wanted to expand the idea to other teams. We had to start over here again, taking the lessons we learned and applying them to new teams.
 
 Change usually starts with a problem. When you realize this obstacle is something that may stand in the way of others, then you've found an opportunity for change. Now, if the problem only impacted you, then you just fix it and move on. That was boring, wasn't it? The hard, complex part about change is that it impacts others. Most of your work enacting change is focused on others — learning their perspective, communicating, collaborating, and more. 
 
@@ -66,7 +66,7 @@ As you learn, iterate your prototype toward a version of your solution that some
 
 ## The early adopters
 
-> "It's amazing what you can accomplish if you do not care who gets credit." - Harry S. Truman
+__"It's amazing what you can accomplish if you do not care who gets credit."__ - Harry S. Truman
 
 > During the first implementation of continuous deployment, no one was using it outside of our team. We were building our prototype. As we expanded support however, we needed to prove that we had a solution that other teams could use. This meant finding a team who was both interested in continuous deployment and tolerant of problems. There was enormous interest from teams who wanted to be the first to adopt this new tooling — but there were far fewer teams who could afford the impact to their availability and delivery timelines that could result from being early adopters. 
 
